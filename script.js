@@ -21,6 +21,6 @@ I'd like to place an order:
 
 I’ll send my payment screenshot here.`;
 
-  const waLink = `https://wa.me/919820087477?text=${encodeURIComponent(message)}`;
+  const waLink = `https://wa.me/918474073707?text=${encodeURIComponent(message)}`;
   window.location.href = waLink;
 });

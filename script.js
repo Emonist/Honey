@@ -8,7 +8,7 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
   const transactionid = encodeURIComponent(e.target.transactionid.value);
   const notes = encodeURIComponent(e.target.notes.value || "None");
 
-  const message = `Hi Honey Dazzle 🌸
+  const message = `Hi Honey Dazzle Jewellery 🌸
 
 I'd like to place an order:
 

@@ -3,6 +3,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: #fffdfd;
   color: #333;
+  padding-top: 60px; /* for fixed nav */
 }
 
 header {
@@ -108,4 +109,55 @@ footer {
   padding: 20px;
   font-size: 0.9em;
   color: #888;
+}
+
+/* Top nav */
+.top-nav {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  padding: 12px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #e91e63;
+  font-weight: bold;
+  font-size: 1em;
+  position: relative;
+}
+
+.top-nav a:hover {
+  color: #c2185b;
+}
+
+.top-nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #e91e63;
+  width: 0%;
+  transition: 0.3s ease;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.top-nav a:hover::after {
+  width: 100%;
+}
+
+/* QR Image */
+.upi-qr {
+  margin-top: 10px;
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
 }

@@ -6,18 +6,28 @@
   <title>Honey Dazzle | Official Store</title>
 
   <link rel="icon" type="image/png" href="https://iili.io/FFH860X.png" />
-
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
 
-  <header>
+  <nav class="top-nav">
+    <a href="#home">Home</a>
+    <a href="#order">Place Order</a>
+    <a href="#products">Products</a>
+  </nav>
+
+  <header id="home">
     <h1>Honey Dazzle</h1>
     <p>Affordable • Elegant • Tarnish-Free Jewellery</p>
   </header>
 
-  <section class="section">
+  <section id="products" class="section">
     <h2>Shop Our Bestsellers</h2>
     <div class="products">
       <div class="product">
@@ -43,10 +53,13 @@
     </div>
   </section>
 
-  <section class="form-section">
+  <!-- Order Section -->
+  <section id="order" class="form-section">
     <h2>How to Order</h2>
     <p class="pay-info">
-      1️⃣ Pay via UPI: <b>honeydazzle@upi</b><br />
+      1️⃣ Pay via UPI: <b>Skanchansharma@oksbi</b><br />
+      <img class="upi-qr" src="e7e97cc6-50bb-4f57-8945-3243a2930749.png" alt="UPI QR" />
+      <br />
       2️⃣ Take a screenshot after payment<br />
       3️⃣ Fill out the form below to complete your order
     </p>
@@ -62,12 +75,14 @@
     </form>
   </section>
 
+  <!-- Social -->
   <section class="section">
     <h2>Follow Us</h2>
     <p>Check out latest drops and customer reviews.</p>
     <a class="btn" href="https://www.instagram.com/honey.dazzle.jewellery/" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
   </section>
 
+  <!-- Footer -->
   <footer>
     © 2025 Honey Dazzle · Built with 💖
   </footer>

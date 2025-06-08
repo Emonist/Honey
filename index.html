@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Honey Dazzle | Official Store</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Honey Dazzle</h1>
+    <p>Affordable • Elegant • Tarnish-Free Jewellery</p>
+  </header>
+
+  <section class="section">
+    <h2>Shop Our Bestsellers</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/300x300?text=Ring+Set" alt="Ring Set" />
+        <h3>Rose Gold Ring Set</h3>
+        <p>₹349</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x300?text=Necklace" alt="Necklace" />
+        <h3>Charm Necklace</h3>
+        <p>₹449</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x300?text=Hoops" alt="Hoop Earrings" />
+        <h3>Golden Hoops</h3>
+        <p>₹249</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>How to Order</h2>
+    <p class="pay-info">
+      1️⃣ Pay via UPI: <b>honeydazzle@upi</b><br />
+      2️⃣ Take a screenshot after payment<br />
+      3️⃣ Fill out the form below to complete your order
+    </p>
+    <form action="https://formspree.io/f/your-form-id" method="POST" enctype="multipart/form-data">
+      <input type="text" name="name" placeholder="Your Full Name" required />
+      <input type="text" name="address" placeholder="Shipping Address" required />
+      <input type="text" name="phone" placeholder="Phone Number" required />
+      <input type="text" name="product" placeholder="Product Name + Quantity" required />
+      <input type="file" name="screenshot" accept="image/*" required />
+      <textarea name="notes" rows="4" placeholder="Any additional notes?"></textarea>
+      <button class="btn" type="submit">Place Order</button>
+    </form>
+  </section>
+
+  <section class="section">
+    <h2>Follow Us</h2>
+    <p>Check out latest drops and customer reviews.</p>
+    <a class="btn" href="https://www.instagram.com/honey.dazzle.jewellery/" target="_blank" rel="noopener noreferrer">Follow on Instagram</a>
+  </section>
+
+  <footer>
+    © 2025 Honey Dazzle · Built with 💖
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

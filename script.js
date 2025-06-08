@@ -14,6 +14,7 @@ I'd like to place an order:
 👤 Name: ${decodeURIComponent(name)}
 📞 Phone: ${decodeURIComponent(phone)}
 🏠 Address: ${decodeURIComponent(address)}
+💵 Txid: ${decodeURIComponent(transactionid)}
 📦 Product(s): ${decodeURIComponent(product)}
 📝 Notes: ${decodeURIComponent(notes)}
 

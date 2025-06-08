@@ -11,14 +11,14 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
 
 I'd like to place an order:
 
-👤 Name: ${name}
-📞 Phone: ${phone}
-🏠 Address: ${address}
-📦 Product(s): ${product}
-📝 Notes: ${notes}
+👤 Name: ${decodeURIComponent(name)}
+📞 Phone: ${decodeURIComponent(phone)}
+🏠 Address: ${decodeURIComponent(address)}
+📦 Product(s): ${decodeURIComponent(product)}
+📝 Notes: ${decodeURIComponent(notes)}
 
 I’ll send my payment screenshot here.`;
 
-  const waLink = `https://wa.me/919820087477?text=${message}`;
+  const waLink = `https://wa.me/919820087477?text=${encodeURIComponent(message)}`;
   window.location.href = waLink;
 });

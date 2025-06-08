@@ -5,6 +5,7 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
   const address = encodeURIComponent(e.target.address.value);
   const phone = encodeURIComponent(e.target.phone.value);
   const product = encodeURIComponent(e.target.product.value);
+  const transactionid = encodeURIComponent(e.target.transactionid.value);
   const notes = encodeURIComponent(e.target.notes.value || "None");
 
   const message = `Hi Honey Dazzle 🌸

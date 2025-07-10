@@ -4,15 +4,23 @@ document.addEventListener('DOMContentLoaded', () => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+            // Handle potential offset for fixed header
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            const headerOffset = document.querySelector('header').offsetHeight; // Get header height
+            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition - headerOffset - 20; // Add some extra padding
+
+            window.scrollTo({
+                 top: offsetPosition,
+                 behavior: "smooth"
             });
 
             // Close mobile menu after clicking a link
             if (document.body.classList.contains('nav-open')) {
                 document.body.classList.remove('nav-open');
-                document.querySelector('.hamburger').classList.remove('active');
-                document.querySelector('.nav-links').classList.remove('active');
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
             }
         });
     });
@@ -37,11 +45,41 @@ document.addEventListener('DOMContentLoaded', () => {
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null; // Collapse the panel
             } else {
-                panel.style.maxHeight = panel.scrollHeight + 'px'; // Expand the panel
+                panel.style.maxHeight = panel.scrollHeight + 'px'; // Expand the panel dynamically
             }
         });
     });
 
     // Set current year in footer
     document.getElementById('current-year').textContent = new Date().getFullYear();
+
+
+    // Scroll Reveal Animation (similar to Olympus effect)
+    const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
+
+    const observerOptions = {
+        root: null, // viewport
+        rootMargin: '0px',
+        threshold: 0.1 // Percentage of element visible to trigger
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Stop observing once animated
+            }
+        });
+    }, observerOptions);
+
+    scrollRevealElements.forEach(el => {
+        observer.observe(el);
+    });
+
+    // Initial check for elements already in view on load
+    scrollRevealElements.forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight) {
+            el.classList.add('active');
+        }
+    });
 });

@@ -1,89 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Honey Dazzle | Official Store</title>
-
-  <link rel="icon" type="image/png" href="https://iili.io/FFH860X.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROTON - Your Ultimate Discord Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="PROTON.webp" alt="PROTON Logo"> <span>PROTON</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#invite" class="btn btn-primary">Invite PROTON</a></li>
+                    <li><a href="#support" class="btn btn-secondary">Support Server</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Top Navigation -->
-  <nav class="top-nav">
-    <a href="#home">Home</a>
-    <a href="#order">Place Order</a>
-    <a href="#products">Products</a>
-  </nav>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h1>PROTON: Your Ultimate Discord Companion</h1>
+                <p>Empower your server with advanced moderation, fun commands, and smart automation.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-primary btn-large">Invite PROTON</a>
+                    <a href="#" class="btn btn-secondary btn-large">Join Support Server</a>
+                </div>
+            </div>
+        </section>
 
-  <!-- HOME: Details / Bio Section -->
-  <section id="home" class="section">
-    <h1>Honey Dazzle</h1>
-    <p><strong>Bio:</strong> We're a premium Indian-based jewellery brand offering affordable, elegant, and tarnish-free accessories. ✨<br>We believe in quality without compromise and design with passion. Handmade with love!</p>
-    <p>📍 Shipping across India<br>🛍 COD & Prepaid Available<br>🎁 Unique Designs Every Week</p>
-    <a class="btn" href="https://www.instagram.com/honey.dazzle.jewellery/" target="_blank">Follow on Instagram</a>
-  </section>
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About PROTON</h2>
+                <p>PROTON is a versatile Discord bot designed to enhance your server experience. From powerful moderation tools to engaging utility commands and unique automation features, PROTON brings everything you need to manage and entertain your community. Our goal is to provide a seamless and enjoyable environment for both server owners and members.</p>
+            </div>
+        </section>
 
-  <!-- ORDER: UPI QR + Form -->
-  <section id="order" class="form-section">
-    <h2>Place Your Order</h2>
-    <p class="pay-info">
-      1️⃣ Pay via UPI: <b>skanchansharma@oksbi</b><br />
-      2️⃣ Take a screenshot after payment<br />
-      3️⃣ Fill out the form below 👇
-    </p>
+        <section id="features" class="features-section">
+            <div class="container">
+                <h2>Key Features & Modules</h2>
 
-    <form id="orderForm" enctype="multipart/form-data">
-      <input type="text" name="name" placeholder="Your Full Name" required />
-      <input type="text" name="address" placeholder="Shipping Address" required />
-      <input type="text" name="phone" placeholder="Phone Number" required />
-      <input type="text" name="product" placeholder="Product Name + Quantity" required />
-      <input type="text" name="transactionid" placeholder="Transaction/UTR Id" required />
-      <input type="file" name="screenshot" accept="image/*" />
-      <textarea name="notes" rows="4" placeholder="Any additional notes?"></textarea>
-      <button class="btn" type="submit">Place Order</button>
-    </form>
-  </section>
+                <div class="feature-category">
+                    <button class="accordion"><i class="fas fa-cogs"></i> Core Modules</button>
+                    <div class="panel">
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-user-circle"></i>
+                                <h3>Avatars</h3>
+                                <p>Get user avatar images and set up server avatars.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <h3>Auto-Role</h3>
+                                <p>Automatically assign roles to new members upon joining.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-gift"></i>
+                                <h3>Giveaways</h3>
+                                <p>Easily manage and host exciting giveaways in your server.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-reply-all"></i>
+                                <h3>Auto-Response</h3>
+                                <p>Set up custom automatic replies to specific keywords or phrases.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-comments"></i>
+                                <h3>Chatbot</h3>
+                                <p>Engage your community with an interactive AI chatbot.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-hand-pointer"></i>
+                                <h3>Autoreact</h3>
+                                <p>Automatically add reactions to new messages.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-camera"></i>
+                                <h3>Camera</h3>
+                                <p>Specialized commands related to image manipulation and camera features.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- PRODUCTS ONLY -->
-  <section id="products" class="section">
-    <h2>Our Products</h2>
-    <div class="products">
-      <div class="product">
-        <img src="https://iili.io/FFHme6u.jpg" alt="Charm Necklace" />
-        <h3>Celestial Charm Necklace</h3>
-        <p>₹80</p>
-      </div>
-      <div class="product">
-        <img src="https://iili.io/FFHQAF4.jpg" alt="Golden Hoops" />
-        <h3>Aura Gold Hoops</h3>
-        <p>₹120</p>
-      </div>
-      <div class="product">
-        <img src="https://iili.io/FFJ5vf9.jpg" alt="Golden Bangles" />
-        <h3>Bliss Bangles Set</h3>
-        <p>₹220</p>
-      </div>
-      <div class="product">
-        <img src="https://iili.io/FFJla6B.jpg" alt="Big Golden Bangles" />
-        <h3>Gilded Diva Bangles</h3>
-        <p>₹320</p>
-      </div>
-    </div>
-  </section>
+                <div class="feature-category">
+                    <button class="accordion"><i class="fas fa-wrench"></i> Utility Modules</button>
+                    <div class="panel">
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-photo-video"></i>
+                                <h3>Media</h3>
+                                <p>Commands for handling various media types and content.</p>
+                            </div>
+                            <div class="fas fa-server"></i>
+                                <h3>Server Tools</h3>
+                                <p>Essential tools for server management and information.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-ellipsis-h"></i>
+                                <h3>Miscellaneous</h3>
+                                <p>A collection of various fun and helpful commands.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-microphone"></i>
+                                <h3>Voice</h3>
+                                <p>Control and interact with voice channels efficiently.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-robot"></i>
+                                <h3>AI</h3>
+                                <p>Integrate artificial intelligence features into your server.</p>
+                            </div>
+                             <div class="feature-item">
+                                <i class="fas fa-users-cog"></i>
+                                <h3>Voice Roles</h3>
+                                <p>Assign roles based on voice channel activity.</p>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-gavel"></i>
+                                <h3>Moderation</h3>
+                                <p>Comprehensive tools to keep your server safe and organized.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- FOOTER -->
-  <footer>
-    © 2025 Honey Dazzle · Built with 💖
-  </footer>
+                <div class="usage-tip">
+                    <h3><i class="fas fa-info-circle"></i> Usage Tip:</h3>
+                    <p>Current Prefix: `?` | Total Commands: <span class="highlight">222</span> | Usable by You: <span class="highlight">121</span></p>
+                    <p>Type `?help &lt;module&gt;` for specific module details.</p>
+                    <a href="#" class="btn btn-primary-outline">Invite PROTON</a>
+                    <a href="#" class="btn btn-secondary-outline">Join Support Server</a>
+                </div>
+            </div>
+        </section>
 
-  <script src="script.js"></script>
+        <section id="invite" class="cta-section">
+            <div class="container">
+                <h2>Ready to Enhance Your Discord Server?</h2>
+                <p>Invite PROTON today and unlock a new level of server management and engagement!</p>
+                <a href="#" class="btn btn-primary btn-large">Invite PROTON to Your Server</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> PROTON. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

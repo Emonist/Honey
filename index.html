@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROTON - Your Ultimate Discord Companion</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -19,8 +19,8 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#invite" class="btn btn-primary">Invite PROTON</a></li>
-                    <li><a href="#support" class="btn btn-secondary">Support Server</a></li>
+                    <li><a href="#" class="btn btn-primary-outline" target="_blank" rel="noopener noreferrer">Invite PROTON</a></li>
+                    <li><a href="#" class="btn btn-secondary-outline" target="_blank" rel="noopener noreferrer">Support Server</a></li>
                 </ul>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -34,64 +34,68 @@
     <main>
         <section id="home" class="hero-section">
             <div class="container">
-                <h1>PROTON: Your Ultimate Discord Companion</h1>
-                <p>Empower your server with advanced moderation, fun commands, and smart automation.</p>
-                <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary btn-large">Invite PROTON</a>
-                    <a href="#" class="btn btn-secondary btn-large">Join Support Server</a>
+                <div class="hero-content">
+                    <h1>PROTON: The Next Level of Discord Automation.</h1>
+                    <p>Empower your community with advanced moderation, engaging utilities, and seamless automation features. PROTON is designed to make your server thrive.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Invite PROTON</a>
+                        <a href="#" class="btn btn-secondary btn-large" target="_blank" rel="noopener noreferrer">Join Support Server</a>
+                    </div>
                 </div>
+                <div class="hero-image">
+                    <img src="PROTON.webp" alt="PROTON Bot Illustration"> </div>
             </div>
         </section>
 
-        <section id="about" class="about-section">
+        <section id="about" class="about-section scroll-reveal">
             <div class="container">
                 <h2>About PROTON</h2>
-                <p>PROTON is a versatile Discord bot designed to enhance your server experience. From powerful moderation tools to engaging utility commands and unique automation features, PROTON brings everything you need to manage and entertain your community. Our goal is to provide a seamless and enjoyable environment for both server owners and members.</p>
+                <p>PROTON is a cutting-edge Discord bot crafted to bring unparalleled functionality and ease of management to your server. We believe in providing robust tools that help server owners maintain a safe, interactive, and fun environment for their members. With a wide array of modules, from essential moderation to unique entertainment features, PROTON is your all-in-one solution for a thriving Discord community.</p>
             </div>
         </section>
 
-        <section id="features" class="features-section">
+        <section id="features" class="features-section scroll-reveal">
             <div class="container">
-                <h2>Key Features & Modules</h2>
+                <h2>Explore Our Powerful Features</h2>
 
                 <div class="feature-category">
                     <button class="accordion"><i class="fas fa-cogs"></i> Core Modules</button>
                     <div class="panel">
                         <div class="feature-grid">
                             <div class="feature-item">
-                                <i class="fas fa-user-circle"></i>
+                                <i class="fas fa-user-circle feature-icon"></i>
                                 <h3>Avatars</h3>
-                                <p>Get user avatar images and set up server avatars.</p>
+                                <p>Retrieve and manage user avatars with various commands.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-shield-alt"></i>
+                                <i class="fas fa-shield-alt feature-icon"></i>
                                 <h3>Auto-Role</h3>
-                                <p>Automatically assign roles to new members upon joining.</p>
+                                <p>Automate role assignments for new members or based on specific actions.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-gift"></i>
+                                <i class="fas fa-gift feature-icon"></i>
                                 <h3>Giveaways</h3>
-                                <p>Easily manage and host exciting giveaways in your server.</p>
+                                <p>Host exciting and fair giveaways directly within your server.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-reply-all"></i>
+                                <i class="fas fa-reply-all feature-icon"></i>
                                 <h3>Auto-Response</h3>
-                                <p>Set up custom automatic replies to specific keywords or phrases.</p>
+                                <p>Set custom automated replies to specific keywords or phrases for instant interaction.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-comments"></i>
+                                <i class="fas fa-comments feature-icon"></i>
                                 <h3>Chatbot</h3>
-                                <p>Engage your community with an interactive AI chatbot.</p>
+                                <p>Integrate an intelligent chatbot to engage and entertain your server members.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-hand-pointer"></i>
+                                <i class="fas fa-hand-pointer feature-icon"></i>
                                 <h3>Autoreact</h3>
-                                <p>Automatically add reactions to new messages.</p>
+                                <p>Automatically add specified reactions to new messages or specific message types.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-camera"></i>
+                                <i class="fas fa-camera feature-icon"></i>
                                 <h3>Camera</h3>
-                                <p>Specialized commands related to image manipulation and camera features.</p>
+                                <p>Unique image manipulation and camera-related commands for fun and utility.</p>
                             </div>
                         </div>
                     </div>
@@ -102,58 +106,61 @@
                     <div class="panel">
                         <div class="feature-grid">
                             <div class="feature-item">
-                                <i class="fas fa-photo-video"></i>
+                                <i class="fas fa-photo-video feature-icon"></i>
                                 <h3>Media</h3>
-                                <p>Commands for handling various media types and content.</p>
+                                <p>Commands for handling images, videos, and other media content.</p>
                             </div>
-                            <div class="fas fa-server"></i>
+                            <div class="feature-item">
+                                <i class="fas fa-server feature-icon"></i>
                                 <h3>Server Tools</h3>
-                                <p>Essential tools for server management and information.</p>
+                                <p>Essential commands for gaining information about your server and members.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-ellipsis-h"></i>
+                                <i class="fas fa-ellipsis-h feature-icon"></i>
                                 <h3>Miscellaneous</h3>
-                                <p>A collection of various fun and helpful commands.</p>
+                                <p>A diverse collection of various commands for general utility and fun.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-microphone"></i>
+                                <i class="fas fa-microphone feature-icon"></i>
                                 <h3>Voice</h3>
-                                <p>Control and interact with voice channels efficiently.</p>
+                                <p>Manage and interact with voice channels, including basic controls.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-robot"></i>
+                                <i class="fas fa-robot feature-icon"></i>
                                 <h3>AI</h3>
-                                <p>Integrate artificial intelligence features into your server.</p>
+                                <p>Leverage artificial intelligence for smart responses and creative content generation.</p>
                             </div>
                              <div class="feature-item">
-                                <i class="fas fa-users-cog"></i>
+                                <i class="fas fa-users-cog feature-icon"></i>
                                 <h3>Voice Roles</h3>
-                                <p>Assign roles based on voice channel activity.</p>
+                                <p>Assign or remove roles based on user presence in voice channels.</p>
                             </div>
                             <div class="feature-item">
-                                <i class="fas fa-gavel"></i>
+                                <i class="fas fa-gavel feature-icon"></i>
                                 <h3>Moderation</h3>
-                                <p>Comprehensive tools to keep your server safe and organized.</p>
+                                <p>Comprehensive tools to maintain order, including kicking, banning, warnings, and more.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="usage-tip">
-                    <h3><i class="fas fa-info-circle"></i> Usage Tip:</h3>
-                    <p>Current Prefix: `?` | Total Commands: <span class="highlight">222</span> | Usable by You: <span class="highlight">121</span></p>
-                    <p>Type `?help &lt;module&gt;` for specific module details.</p>
-                    <a href="#" class="btn btn-primary-outline">Invite PROTON</a>
-                    <a href="#" class="btn btn-secondary-outline">Join Support Server</a>
+                <div class="usage-tip scroll-reveal">
+                    <h3><i class="fas fa-info-circle"></i> Quick Usage Guide:</h3>
+                    <p>Current Prefix: `<span class="highlight">?</span>` | Total Commands: <span class="highlight">222</span> | Usable by You: <span class="highlight">121</span></p>
+                    <p>Type `<span class="code-text">?help &lt;module&gt;</span>` for detailed information on any specific module.</p>
+                    <div class="usage-tip-buttons">
+                        <a href="#" class="btn btn-primary-outline" target="_blank" rel="noopener noreferrer">Invite PROTON</a>
+                        <a href="#" class="btn btn-secondary-outline" target="_blank" rel="noopener noreferrer">Join Support Server</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="invite" class="cta-section">
+        <section id="contact" class="cta-section scroll-reveal">
             <div class="container">
-                <h2>Ready to Enhance Your Discord Server?</h2>
-                <p>Invite PROTON today and unlock a new level of server management and engagement!</p>
-                <a href="#" class="btn btn-primary btn-large">Invite PROTON to Your Server</a>
+                <h2>Ready to Empower Your Discord Server?</h2>
+                <p>Join thousands of happy server owners who trust PROTON for seamless management and engagement.</p>
+                <a href="#" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Invite PROTON to Your Server</a>
             </div>
         </section>
     </main>

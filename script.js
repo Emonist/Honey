@@ -1,26 +1,47 @@
-document.getElementById("orderForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+document.addEventListener('DOMContentLoaded', () => {
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
-  const name = encodeURIComponent(e.target.name.value);
-  const address = encodeURIComponent(e.target.address.value);
-  const phone = encodeURIComponent(e.target.phone.value);
-  const product = encodeURIComponent(e.target.product.value);
-  const transactionid = encodeURIComponent(e.target.transactionid.value);
-  const notes = encodeURIComponent(e.target.notes.value || "None");
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
 
-  const message = `Hi Honey Dazzle Jewellery 🌸
+            // Close mobile menu after clicking a link
+            if (document.body.classList.contains('nav-open')) {
+                document.body.classList.remove('nav-open');
+                document.querySelector('.hamburger').classList.remove('active');
+                document.querySelector('.nav-links').classList.remove('active');
+            }
+        });
+    });
 
-I'd like to place an order:
+    // Hamburger menu functionality
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
-👤 Name: ${decodeURIComponent(name)}
-📞 Phone: ${decodeURIComponent(phone)}
-🏠 Address: ${decodeURIComponent(address)}
-💵 Txid: ${decodeURIComponent(transactionid)}
-📦 Product(s): ${decodeURIComponent(product)}
-📝 Notes: ${decodeURIComponent(notes)}
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+        document.body.classList.toggle('nav-open'); // Add a class to body to prevent scroll
+    });
 
-I’ll send my payment screenshot here.`;
+    // Accordion functionality for features
+    const accordions = document.querySelectorAll('.accordion');
 
-  const waLink = `https://wa.me/918474073707?text=${encodeURIComponent(message)}`;
-  window.location.href = waLink;
+    accordions.forEach(accordion => {
+        accordion.addEventListener('click', function() {
+            this.classList.toggle('active');
+            const panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null; // Collapse the panel
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + 'px'; // Expand the panel
+            }
+        });
+    });
+
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
 });
